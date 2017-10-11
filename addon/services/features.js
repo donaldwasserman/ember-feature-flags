@@ -1,8 +1,7 @@
-import Ember from 'ember';
+import Service from '@ember/service';
+import { camelize } from '@ember/string';
 
-let { camelize } = Ember.String;
-
-export default Ember.Service.extend({
+export default Service.extend({
 
   init() {
     this._super(...arguments);
